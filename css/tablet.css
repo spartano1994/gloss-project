@@ -1,0 +1,91 @@
+:root {
+    --principal-color: rgb(183, 136, 226);
+    --texto-color: black;
+    --barra-lateral-color: rgb(240, 164, 240);
+    --barra-lateral-fuente: 'Marck Script', cursive;
+    --margin-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.barra-lateral{
+    left: -80%
+}
+
+/*----------------------------------------------------------------------------------------------*/
+header {
+    padding: 1rem 3rem;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    margin-right: 2rem;
+}
+
+.navbar-elemento a{
+    text-decoration: none;
+    color: var(--texto-color);
+}
+
+.menu-img {
+    display: none;
+}
+
+.logo-imagen {
+    width: 20rem;
+}
+
+.reservar-boton {
+    display: block;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+.banner-contenedor{
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: var(--principal-color);
+    padding: 3rem;
+}
+
+.banner-titulo {
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 6rem;
+    max-height: 15rem;
+    text-align: center;
+}
+
+.banner-direccion {
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.peinado-banner {
+    max-width: 50.5rem;
+    margin-left: 2rem;
+    border-radius: 50% 50% 0 0;
+}

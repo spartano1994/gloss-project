@@ -1,0 +1,166 @@
+:root {
+    --principal-color: rgb(183, 136, 226);
+    --texto-color: black;
+    --barra-lateral-color: #D4C9DF;
+    --color1: #AF82D9;
+    --color2: #555059;
+    --color3: #8663A6;
+    --barra-lateral-fuente: 'Marck Script', cursive;
+    --margin-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    position: relative;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+.barra-lateral {
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: var(--barra-lateral-color);
+    transition: 0.3 all;
+}
+
+.barra-lateral-cerrar-container{
+    display: block;
+    position: relative;
+}
+
+.barra-lateral-cerrar-img {
+    width: 5rem;
+    padding: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.barra-lateral-lista {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.barra-lateral-bar ul {
+    list-style: none;
+}
+
+.barra-lateral-elemento{
+    display: inline;
+    margin-bottom: 3rem;
+}
+
+.barra-lateral-elemento a {
+    text-decoration: none;
+    color: var(--texto-color);
+    font-size: 4.6rem;
+    font-family: var(--barra-lateral-fuente);
+}
+
+.reservar-boton-aside {
+    width: 42vw;
+    min-width: 12.6rem;
+    max-width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: var(--barra-lateral-color);
+    border-radius: 2rem;
+}
+
+
+/*----------------------------------------------------------------------------------------------*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding: 1rem 1rem;
+    background-color: var(--principal-color) ;
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--margin-color);
+}
+
+.navbar {
+    display: none;
+}
+
+.menu-img {
+    width: 4rem;
+    padding: 1rem;
+    margin-left: 0rem;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.logo-imagen {
+    width: 15rem;
+}
+
+.reservar-boton {
+    display: none;
+    width: 42vw;
+    min-width: 12.6rem;
+    max-width: 20rem;
+    padding: 1rem;
+    background-color: var(--principal-color);
+    border-radius: 2rem;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+.banner-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--principal-color);
+    padding: 3rem;
+}
+
+.banner-titulo {
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 3.2rem;
+    text-align: center;
+
+}
+
+.banner-direccion {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo-picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peinado-banner {
+    width: 100%;
+    max-width: 48rem;
+    border-radius: 50% 50% 0 0;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------*/
