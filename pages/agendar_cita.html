@@ -1,20 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="Agenda una cita con nosostros" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Marck+Script&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1280px)">
-    <link rel="icon" type="image/png" href="./images/icon.png">
-    <title>Agenda una cita</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="Agenda una cita con nosostros" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Marck+Script&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/agendar_cita/style.css">
+        <link rel="stylesheet" href="../css/agendar_cita/tablet.css" media="screen and (min-width: 768px)">
+        <link rel="stylesheet" href="../css/agendar_cita/desktop.css" media="screen and (min-width: 1280px)">
+        <link rel="icon" type="image/png" href="./images/icon.png">
+        <title>Agenda una cita</title>
+    </head>
+    <body>
+        <aside class="barra-lateral" data-aside>
+            <picture class="barra-lateral-cerrar-container">
+                <img src="../images/menu_cerrar.png" alt="Flecha apuntando a la izquierda" class="barra-lateral-cerrar-img">
+            </picture>
+            
+
+            <nav class="barra-lateral-bar">
+                <ul class="barra-lateral-lista">
+                    <li class="barra-lateral-elemento"><a href="../index.html">Inicio</a></li>
+                    <li class="barra-lateral-elemento"><a href="">Servicios</a></li>
+                    <li class="barra-lateral-elemento"><a href="">Nosotros</a></li>
+                    <li class="barra-lateral-elemento"><a href="">Productos</a></li>
+                    <li class="barra-lateral-elemento"><a href="">Contacto</a></li>
+
+                </ul>
+            </nav>
+
+        </aside>
+
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="navbar-elemento"><a href="../index.html">Inicio</a></li>
+                    <li class="navbar-elemento"><a href="">Servicios</a></li>
+                    <li class="navbar-elemento"><a href="">Nosotros</a></li>
+                    <li class="navbar-elemento"><a href="">Productos</a></li>
+                    <li class="navbar-elemento"><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <img src="../images/menu.png" alt="Símbolo de menú desplegable" class="menu-img">
+
+            <picture class="logo-picture-container">
+                <img src="../images/estetica_logo.png" alt="Logo de estética Gloss" class="logo-imagen">
+            </picture>
+
+            <div class="reservar-boton-contenedor">
+                <button  class="reservar-boton">Reserva una cita</button>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="formulario">
+                <form class="formulario-contenedor" action="">
+                    <legend class="formulario-seccion">Información de la cita</legend>
+        
+                    <div class="input-container">
+                        <input type="text" class="input-field" id="nombre" placeholder=" " name="nombre" autocomplete="off" data-tipo="nombre" required>
+                        <label for="nombre" class="label-field">Nombre y apellido</label>
+                        <span class="input-message-error"></span>
+                    </div>
+        
+                    <div class="input-container">
+                        <input type="text" class="input-field"  placeholder=" " autocomplete="off" data-tipo="nombre" required>
+                        <label for="nombre" class="label-field">Teléfono</label>
+                        <span class="input-message-error"></span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="email" class="input-field" id="email" placeholder=" " name="correo" autocomplete="off" data-tipo="email" required>
+                        <label for="email" class="label-field">Servicio</label>
+                        <span class="input-message-error"></span>
+                    </div>
+        
+                    <div class="input-container">
+                        <select name="servicio" id="" class="input-field" placeholder=" "  autocomplete="off" data-tipo="servicio" required>
+                            <option value="corte">Corte</option>
+                            <option value="peinados">Peinados</option>
+                            <option value="tintes">Tintes</option>
+                            <option value="manicure">Manicure</option>
+                            <option value="pedicure">Pedicure</option>
+                            <option value="mechas">Mechas</option>
+                            <option value="rayos">Rayos</option>
+                            <option value="efectos">Efectos de color</option>
+                        </select>
+                        <label for="servicio" class="label-field">Servicio</label>
+                        <span class="input-message-error"></span>
+                    </div>
+        
+                    <div class="input-container">
+                        <input type="date" id="" class="input-field" placeholder=" " autocomplete="off" data-tipo="fecha" required>
+                        <label for="nombre" class="label-field">Fecha disponible</label>
+                        <span class="input-message-error"></span>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="time" min="09:00" max="18:00" id="hora" class="input-field" placeholder=" " autocomplete="off" data-tipo="fecha" required>
+                        <label for="nombre" class="label-field">Horario disponible</label>
+                        <span class="input-message-error"></span>
+                    </div>
+
+                </form>
+                
+            </div>
+            
+        </main>
+
+        <footer>
+
+        </footer>
+        
+        <script src="../app.js" type="module"></script>
+    </body>
 </html>

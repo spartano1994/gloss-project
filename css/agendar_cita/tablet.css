@@ -1,16 +1,5 @@
 :root {
     --principal-color: rgb(183, 136, 226);
-    --principal-color-1: #3a1853;
-    --principal-color-2: #582f74;
-    --principal-color-3: #6b3990;
-    --principal-color-4: #7e41af;
-    --principal-color-5: #9454c9;
-    --principal-color-6: #a972da;
-    --principal-color-7: #b788e2;
-    --principal-color-8: #d9c1f1;
-    --principal-color-9: #eaddf7;
-    --principal-color-10: #f3ecfb;
-    --principal-color-11: #faf7fd;
     --texto-color: black;
     --barra-lateral-color: rgb(240, 164, 240);
     --barra-lateral-fuente: 'Marck Script', cursive;

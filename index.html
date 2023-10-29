@@ -17,10 +17,10 @@
     </head>
 
     <body>
-
         <aside class="barra-lateral" data-aside>
             <picture class="barra-lateral-cerrar-container">
                 <img src="./images/menu_cerrar.png" alt="Flecha apuntando a la izquierda" class="barra-lateral-cerrar-img">
+            
             </picture>
             
 
@@ -30,10 +30,11 @@
                     <li class="barra-lateral-elemento"><a href="">Nosotros</a></li>
                     <li class="barra-lateral-elemento"><a href="">Productos</a></li>
                     <li class="barra-lateral-elemento"><a href="">Contacto</a></li>
-                    <button class="reservar-boton-aside">Reserva una cita</button>
-                </ul>
-            </nav>
+                    <a class="reservar-boton-aside-contenedor" href="./pages/agendar_cita.html"><div class="reservar-boton-aside">Reserva una cita</div></a>
 
+                </ul>
+                
+            </nav>
                 
         </aside>
 
@@ -44,17 +45,21 @@
                     <li class="navbar-elemento"><a href="">Nosotros</a></li>
                     <li class="navbar-elemento"><a href="">Productos</a></li>
                     <li class="navbar-elemento"><a href="">Contacto</a></li>
+                
                 </ul>
+
             </nav>
 
             <img src="./images/menu.png" alt="Símbolo de menú desplegable" class="menu-img">
 
             <picture class="logo-picture-container">
                 <img src="./images/estetica_logo.png" alt="Logo de estética Gloss" class="logo-imagen">
+            
             </picture>
 
             <div class="reservar-boton-contenedor">
-                <button class="reservar-boton">Reserva una cita</button>
+                <button  class="reservar-boton">Reserva una cita</button>
+            
             </div>
 
         </header>
@@ -63,7 +68,7 @@
             <section class="banner-contenedor">
 
                 <div class="banner-texto">
-                    <h2 class="banner-titulo">Bienvenidos a estética Gloss</h2>
+                    <h2 class="banner-titulo">Bienvenidos a estética <br><span class="banner-titulo-nombre"> GLOSS</span></h2>
     
                     <p class="banner-direccion"> Benito Bernal 96, Ejército de Agua Prieta, Iztapalapa, CDMX</p>
 
@@ -71,6 +76,7 @@
 
                 <picture>
                     <img src="./images/peinado_banner.png" alt="Foto del cabello de una chica" class="peinado-banner">
+                
                 </picture>
 
             </section>
@@ -79,16 +85,35 @@
 
             </section>
 
+            <section class="galeria">
+                <p>Galería</p>
+                <div class="carrusel">
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                    <div class="elemento-carrusel"></div>
+                </div>
+
+            </section>
+
             <section class="testimonios-contenedor">¿Qué opinan nuestras clientas?
 
             </section>
+
         </main>
 
-        <footer>
+        <footer class="pie">
+            <p>&#169 2023 Gerardo González García <br> Challenge Oracle One - G5</p>
 
         </footer>
 
-        <script src="./app.js"></script>
+        <script src="./app.js" type="module"></script>
 
     </body>
 
